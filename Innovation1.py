@@ -18,6 +18,7 @@ finallyh draw a graph.
    once you have a score,and write the score to  a csv file
 3. Final method: draw_graph plot them into a graph in excel and have a total
    picture. 
+4. I am adding this one.   
  
 """
 
@@ -45,8 +46,8 @@ def take_input():
     add_times = args.add_times
     subtraction_times = args.subtraction_times
     multiplication_times = args.multiplication_times 
-    print "Generate  %d addition, %d subtraction, and %d multiplication"% \
-           (add_times,subtraction_times,multiplication_times)
+    print ("Generate  %d addition, %d subtraction, and %d multiplication"% \
+           (add_times,subtraction_times,multiplication_times))
     return(add_times, subtraction_times, multiplication_times)
     
 
@@ -71,8 +72,8 @@ def generate_question(add,sub,mul):
                 result = a - b
             else:
                 result = a * b
-            print a, key1 ,b,'=', result           
-            iter+=1
+            print (a, key1 ,b,'=', result)
+            iter+=2
            
     
 def draw_graph():
