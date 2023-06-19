@@ -47,8 +47,8 @@ def take_input():
     add_times = args.add_times
     subtraction_times = args.subtraction_times
     multiplication_times = args.multiplication_times 
-    print "Generate  %d addition, %d subtraction, and %d multiplication"% \
-           (add_times,subtraction_times,multiplication_times)
+    print ("Generate  %d addition, %d subtraction, and %d multiplication"% \
+           (add_times,subtraction_times,multiplication_times))
     return(add_times, subtraction_times, multiplication_times)
     
 
@@ -73,7 +73,7 @@ def generate_question(add,sub,mul):
                 result = a - b
             else:
                 result = a * b
-            print a, key1 ,b,'=', result           
+            print (a, key1 ,b,'=', result)
             iter+=1
            
     
