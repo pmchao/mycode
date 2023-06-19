@@ -18,7 +18,8 @@ finallyh draw a graph.
    once you have a score,and write the score to  a csv file
 3. Final method: draw_graph plot them into a graph in excel and have a total
    picture. 
-4. This is at my branch    
+4. This is at my branch   
+5. This should cause some rebase issue 
  
 """
 
