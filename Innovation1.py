@@ -19,7 +19,7 @@ finallyh draw a graph.
 3. Final method: draw_graph plot them into a graph in excel and have a total
    picture. 
 4. This is at my branch
-5. Adding no. 5 and 6here.
+5. Adding no. 5 and 6 and 7 here.
  
 """
 
