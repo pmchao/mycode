@@ -8,7 +8,6 @@ def anagram_period(s):
     forms a string that is an anagram of the original string.
     """
     n = len(s)
-
     for i in range(1, n // 2 + 1):  # Only need to check up to half the length of the string
         if n % i == 0:  # Check if i is a divisor of the length of the string
             is_period = True
