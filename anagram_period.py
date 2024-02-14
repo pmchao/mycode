@@ -19,7 +19,7 @@ def anagram_period(s):
             if is_period:
                 return i  # i is the anagram period
 
-    return n  # If no smaller period found, the period is the length of the string itself
+    return n
 #  s = "abccbaacb"
 #s = "abccbaacb"
 s = "aabb"
