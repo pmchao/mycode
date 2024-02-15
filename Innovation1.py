@@ -93,7 +93,10 @@ def draw_graph():
  
 def Main():
     # The main method with local stuff
-    
+    # The main method with
+    # The 2nd line
+
+
     add,sub,mul=take_input()
     generate_question(add ,sub,mul)
     draw_graph()
