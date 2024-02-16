@@ -1,1 +1,1 @@
-print("This is from local drive")
+print("This is from remote drive")
