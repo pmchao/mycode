@@ -1,5 +1,2 @@
-mycode
-======
+This is interview collection version 2.
 
-My code include all interveiw preparation work
-It is my first checkin.
