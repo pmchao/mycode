@@ -1,16 +1,8 @@
 
+print("what I have done")
+print("***")
+print("yes it is")
+print("yes   it is")
+print("================")
+print("----------------")
 
-
-is_
-
-
-
-
-
-
-s = 'abba'
-
-if is_palindrome_v1(s):
-    print('PALINDROME')
-else:
-    print('NOT PALINDROME')
