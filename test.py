@@ -1,10 +1,6 @@
-print("what I have done")
-print("***")
-print("yes it is")
-print("yes   it is")
-print("================")
-print("----------------a")
-########
-print("I am pushing this one")
+print("1","This is line 1")
+print("2","This is line 2")
+print("3","This is line 3")
+print("4","This is line 4")
 print("This concluded the program")
 
