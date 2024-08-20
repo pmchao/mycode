@@ -1,6 +1,7 @@
 """
 This program  is used to test the following issues:
 (1) rebase in git
+(1a): continue
 """
 
 print("1","This is line 1")
