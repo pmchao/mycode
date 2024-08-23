@@ -2,9 +2,6 @@ import subprocess
 
 """
 1: This script retrieves and displays the current Git branch in the repository.
-2:It uses the subprocess module to run the Git command `git rev-parse --abbrev-ref HEAD`.
-3: If the script is run within a Git repository, it will print the name of the current branch.
-4: If it's not run within a Git repository, or if any error occurs, it will display an error message.
 """
 
 def get_git_branch():
