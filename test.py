@@ -1,12 +1,21 @@
-"""
-This program  is used to test the following issues:
-(1) rebase in git
-(1a): continue
-(2) rebase next lesson
-(3) dig deeper of rebase
-(4) rebase with the newest line
-(5) rebase with only 3 test line.
-"""
-print("1","This is line 1")
-print("2","This is line 2")
-print("3","This is line 3")
+import subprocess
+
+def get_git_branch():
+    try:
+        # Run the git command to get the current branch
+        result = subprocess.run(
+            ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+        # Check if the command was successful
+        if result.returncode == 0:
+            print(f"Current Git branch: {result.stdout.strip()}")
+        else:
+            print("Error: Not a git repository or no branch found.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+if __name__ == "__main__":
+    get_git_branch()
