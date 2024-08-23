@@ -24,6 +24,6 @@ def get_git_branch():
             print("Error: Not a git repository or no branch found.")
     except Exception as e:
         print(f"An error occurred: {e}")
-
+#The main program
 if __name__ == "__main__":
     get_git_branch()
