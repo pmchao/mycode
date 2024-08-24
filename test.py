@@ -2,7 +2,7 @@ import subprocess
 
 """
 1: This script retrieves and displays the current Git branch in the repository.
-
+2: version: 1.0
 """
 
 def get_git_branch():
@@ -22,6 +22,5 @@ def get_git_branch():
     except Exception as e:
         print(f"An error occurred,you are not in git: {e}")
 
-#The main program
 if __name__ == "__main__":
     get_git_branch()
