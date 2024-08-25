@@ -3,7 +3,7 @@ import subprocess
 """
 1: This script retrieves and displays the current Git branch in the repository.
 2: version: 1.0
-3: version: 2.0
+3: Version 2.1
 """
 
 def get_git_branch():
