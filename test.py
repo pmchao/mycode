@@ -5,7 +5,7 @@ import subprocess
 2: version: 1.0
 3: version: 2.0
 4: version: 3.0
-5: version: 4.0
+5: The final version  all checkin
 
 """
 
@@ -24,7 +24,7 @@ def get_git_branch():
         else:
             print("Error: Not a git repository or no branch found.")
     except Exception as e:
-        print(f"An error occurred,you are not in git: {e}")
+        print(f"An error occurred,you are not in git env: {e}")
 
 if __name__ == "__main__":
     get_git_branch()
