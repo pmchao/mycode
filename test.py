@@ -23,7 +23,7 @@ def get_git_branch():
         else:
             print("Error: Not a git repository or no branch found.")
     except Exception as e:
-        print(f"An error occurred,you are not in git: {e}")
+        print(f"An error occurred,you are not in git env: {e}")
 
 if __name__ == "__main__":
     get_git_branch()
