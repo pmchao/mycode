@@ -21,6 +21,7 @@ def get_git_branch():
         # Check if the command was successful
         if result.returncode == 0:
             print(f"Current Git branch: {result.stdout.strip()}")
+            print("=============================")
         else:
             print("Error: Not a git repository or no branch found.")
     except Exception as e:
