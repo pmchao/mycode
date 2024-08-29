@@ -1,5 +1,5 @@
 import pytest
-from your_script_name import check_value, ValueTooSmallError, ValueTooLargeError
+from my_script_name import check_value, ValueTooSmallError, ValueTooLargeError
 
 def test_value_too_small():
     with pytest.raises(ValueTooSmallError) as exc_info:
