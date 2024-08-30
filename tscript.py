@@ -14,3 +14,4 @@ def test_value_too_small():
     assert str(exc_info.value) == "The value 105 is too small."
 
 print ("this concluded version 1")
+print ("this concluded version 2")
