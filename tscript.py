@@ -12,3 +12,5 @@ def test_value_too_small():
         check_value(105)  # Assuming 10 is the minimum acceptable value
 
     assert str(exc_info.value) == "The value 105 is too small."
+
+print ("this concluded version 1")
