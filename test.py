@@ -1,1 +1,1 @@
-print ("This is the simplified version ")
+print ("This is the simplified version 1")
