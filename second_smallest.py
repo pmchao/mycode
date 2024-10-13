@@ -15,6 +15,7 @@ def second_min(numbers):
 
     # Initialize the two smallest numbers to positive infinity
     min1 = float('inf')
+    #negative_infinity = float('-inf')
     min2 = float('inf')
 
     # Iterate through the list to find the two smallest unique numbers
