@@ -16,8 +16,6 @@ def count_word_frequency(paragraph):
             word_counts[word] = 1
 
     return word_counts
-
-
 # Example usage
 #"""
 paragraph = """

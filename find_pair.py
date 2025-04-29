@@ -1,10 +1,3 @@
-
-
-"""
-Find pair with target sum
-"""
-
-
 def find_pairs_with_sum(numbers, target):
     seen = set()
     pairs = []
@@ -12,10 +5,13 @@ def find_pairs_with_sum(numbers, target):
         complement = target - number
         if complement in seen:
             pairs.append((number, complement))
-        seen.add(number)
+            # Remove both numbers from `seen` to avoid reusing them
+            seen.remove(complement)
+        else:
+            seen.add(number)
     return pairs
 
 # Example usage
-numbers = [2, 4, 3, 5, 7, 8, 1]
+numbers = [2, 5, 5, 5, 4, 3, 7, 8]
 target = 10
 print(find_pairs_with_sum(numbers, target))
