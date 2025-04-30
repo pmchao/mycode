@@ -1,8 +1,24 @@
+"""
+This script demonstrates how to define and use custom exceptions in Python.
+
+Features:
+---------
+- Defines a base custom exception class `CustomError`.
+- Implements two specific exceptions:
+    - `ValueTooSmallError` — raised when a value is below a minimum threshold.
+    - `ValueTooLargeError` — raised when a value exceeds a maximum threshold.
+- Includes a function `check_value()` to validate input and raise appropriate exceptions.
+- Demonstrates usage with multiple test cases using `try`/`except`.
+
+Author: [Your Name]
+"""
+
+# Define a base class for all custom exceptions
 class CustomError(Exception):
     """Base class for other exceptions"""
     pass
 
-
+# Exception raised when the input value is too small
 class ValueTooSmallError(CustomError):
     """Raised when the input value is too small"""
 
@@ -10,7 +26,7 @@ class ValueTooSmallError(CustomError):
         self.message = message
         super().__init__(self.message)
 
-
+# Exception raised when the input value is too large
 class ValueTooLargeError(CustomError):
     """Raised when the input value is too large"""
 
@@ -18,9 +34,18 @@ class ValueTooLargeError(CustomError):
         self.message = message
         super().__init__(self.message)
 
-
+# Function to validate a given value and raise appropriate exceptions
 def check_value(value):
-    """Function to check the value and raise custom exceptions."""
+    """
+    Check if the input value is within the acceptable range (10–100).
+
+    Args:
+        value (int): The value to check.
+
+    Raises:
+        ValueTooSmallError: If the value is less than 10.
+        ValueTooLargeError: If the value is greater than 100.
+    """
     if value < 10:
         raise ValueTooSmallError(f"The value {value} is too small.")
     elif value > 100:
@@ -28,7 +53,7 @@ def check_value(value):
     else:
         print(f"The value {value} is within the acceptable range.")
 
-
+# Test cases to demonstrate behavior
 if __name__ == "__main__":
     try:
         # Test with a value that is too small
@@ -45,9 +70,6 @@ if __name__ == "__main__":
         print(e)
     except ValueTooLargeError as e:
         print(e)
-
-
-    #Try it with a number within value.
 
     try:
         # Test with a value within the acceptable range
